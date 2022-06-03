@@ -8,6 +8,8 @@
 
 int main(void)
 {
-fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+char err[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	fprintf(stderr, err);
 	return (1);
 }
