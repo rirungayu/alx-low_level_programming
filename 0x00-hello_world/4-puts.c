@@ -6,6 +6,11 @@
  * using puts function
  */
 
+/**
+ * main - function to print output
+ *
+ * Return: zero after printing
+ */
 int main(void)
 {
 	char outstr[] = "\"Programming is like building a multilingual puzzle";
