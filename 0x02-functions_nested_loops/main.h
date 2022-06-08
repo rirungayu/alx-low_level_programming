@@ -1,6 +1,9 @@
 #ifndef MAIN_DOT_H
 #define MAIN_DOT_H
 
+/* function to print output */
+int _putchar(char c);
+
 /* function to print the alphabet */
 void print_alphabet(void);
 
