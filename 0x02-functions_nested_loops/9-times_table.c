@@ -18,7 +18,7 @@ int f = j * i;
 if (f > 9)
 	_putchar((f / 10) + '0');
 _putchar((f % 10) + '0');
-if( j != 9)
+if (j != 9)
 	_putchar(',');
 if (f < 10 && j != 9)
 	_putchar(' ');
