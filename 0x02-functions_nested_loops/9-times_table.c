@@ -23,8 +23,6 @@ if (f < 10 && j != 9)
 	_putchar(' ');
 if (j < 9)
 	_putchar(' ');
-if (j == 9)
-	_putchar('$');
 }
 _putchar('\n');
 }
