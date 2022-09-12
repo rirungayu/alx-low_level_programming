@@ -26,6 +26,7 @@ int main(void)
 
 		if (number == 90)
 		{
+			putchar(' ');
 			break;
 		}
 		putchar(',');
