@@ -32,8 +32,8 @@ int main(void)
 			putchar(first2 % 10 + '0');
 			putchar(second2 % 10 + '0');
 		}
-		putchar('\n');
 		putchar(' ');
 	}
+	putchar('\n');
 	return (0);
 }
