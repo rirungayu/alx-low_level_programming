@@ -16,8 +16,7 @@ int main(void)
 	{
 		int first1 = number1 / 10;
 		int second1 = number1 % 10;
-
-		int number2 = number1;
+		int number2 = number1 + 1;
 
 		number1 = number1 + 1;
 		while (number2 < max)
@@ -31,6 +30,8 @@ int main(void)
 			putchar(' ');
 			putchar(first2 % 10 + '0');
 			putchar(second2 % 10 + '0');
+			putchar(',');
+			putchar(' ');
 		}
 		putchar(' ');
 	}
