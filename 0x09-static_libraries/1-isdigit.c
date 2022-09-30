@@ -1,31 +1,17 @@
 #include "main.h"
 
 /**
-* _strcat - concatenates two strings
+* _isdigit - Checks for numbers
 *
-* @dest: destination string; src string is appended to it
+* @c: character to checked
 *
-* @src: Source string; gets appended to dest string
-*
-* Return: Pointer to dest
+* Return: 1 OR 0
 */
 
-char *_strcat(char *dest, char *src)
+int _isdigit(int c)
 {
-	int i = 0;
-	int j = 0;
-
-	while (dest[i] != '\0')
-		i++;
-
-	while (src[j] != '\0')
-	{
-		*(dest + i) = src[j];
-		j++;
-		i++;
-	}
-
-	*(dest + i) = '\0';
-
-	return (dest);
+	if (c >= 48 && c <= 57)
+		return (1);
+	else
+		return (0);
 }
