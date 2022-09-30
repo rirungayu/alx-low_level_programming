@@ -1,20 +1,14 @@
 #include <stdio.h>
 
-/*
- * c program to output the string
- * "\"Programming is like building a multilingual puzzle into stdout"
- * using puts function
- */
-
 /**
- * main - function to print output
- *
- * Return: zero after printing
- */
-int main(void)
-{
-	char outstr[] = "\"Programming is like building a multilingual puzzle";
+* _puts - Print a string folllowed by a new line.
+*
+* @str: String to be printed
+*
+* Return: Nothing
+*/
 
-	puts(outstr);
-	return (0);
+void _puts(char *str)
+{
+	printf("%s\n", str);
 }
