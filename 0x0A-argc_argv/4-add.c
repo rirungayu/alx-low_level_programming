@@ -14,27 +14,24 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
-		return (0);
 	}
-	else if (argc >= 3)
+	else if (argc >= 2)
 	{
-		int i = 0;
-		int sum = 0;
+		int i = 1;
+		long sum = 0;
 
 		while (i < argc)
 		{
-			if (isdigit(argv[i]))
+			long curr = atoi(argv[i]);
+			if(isdigit(curr) || curr < 0)
 			{
-				sum = sum + strtol(argv[i], NULL, 10);
+				printf("Error\n");
+				return (1);
 			}
-			else
-			{
-			printf("Error\n");
-			return (1);
-			}
+		sum = sum + curr;
 		i++;
 		}
-		printf("%d\n", sum);
+		printf("%ld\n", sum);
 	}
 		return (0);
 }
