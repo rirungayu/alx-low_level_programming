@@ -23,7 +23,8 @@ int main(int argc, char *argv[])
 		while (i < argc)
 		{
 			long curr = atoi(argv[i]);
-			if(isdigit(curr) || curr < 0)
+
+			if (isdigit(curr) || curr < 0)
 			{
 				printf("Error\n");
 				return (1);
