@@ -20,8 +20,9 @@ char *create_array(unsigned int size, char c)
       
     if (chars == NULL)
 		  return ('\0');
-      
-    chars[0] = c;
+    for (i = 0; i < size; i++)
+    	chars[0] = c;
+	
     chars[size] = '\0';
 	
   return (chars);  
