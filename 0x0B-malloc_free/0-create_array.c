@@ -11,19 +11,19 @@
 
 char *create_array(unsigned int size, char c)
 {
-    char *chars;
-
-    chars = malloc(size);
-    
-    if (size == 0)
-		  return ('\0');
-      
-    if (chars == NULL)
-		  return ('\0');
-    for (i = 0; i < size; i++)
-    	chars[0] = c;
+	char *chars;
+	unsigned int i;
 	
-    chars[size] = '\0';
+	chars = malloc(size);
+	if (size == 0)
+		return ('\0');
 	
-  return (chars);  
+	if (chars == NULL)
+		return ('\0');
+	
+	for (i = 0; i < size; i++)
+		chars[0] = c;
+	chars[size] = '\0';
+	
+	return (chars);  
   }
