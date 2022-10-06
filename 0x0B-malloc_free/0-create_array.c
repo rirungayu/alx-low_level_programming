@@ -21,8 +21,8 @@ char *create_array(unsigned int size, char c)
     if (chars == NULL)
 		  return ('\0');
       
-    char[0] = c;
+    chars[0] = c;
     chars[size] = '\0';
 	
-  return (arr);  
+  return (chars);  
   }
