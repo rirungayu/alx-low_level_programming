@@ -12,6 +12,8 @@ void print_triangle(int size)
 {
 	int rows = 0;
 
+	if(size > 0)
+	{
 	while (rows < size)
 	{
 		int spaces = size;
@@ -31,6 +33,11 @@ void print_triangle(int size)
 		}
 	_putchar('\n');
 	counter++;
+	}
+	}
+	else
+	{
+		_putchar('\n');
 	}
 
 }
