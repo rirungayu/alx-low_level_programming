@@ -1,6 +1,9 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
+/*putchar function*/
+int _putchar(char c);
+
 /*checks if character is uppercase*/
 int _isupper(int c);
 
