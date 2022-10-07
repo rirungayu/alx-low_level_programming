@@ -18,7 +18,7 @@ void print_triangle(int size)
 	{
 		int spaces = size;
 
-		while (spaces > counter)
+		while (spaces > rows)
 		{
 			_putchar(' ');
 			spaces--;
@@ -26,13 +26,13 @@ void print_triangle(int size)
 
 		int hashes = 0;
 
-		while (hashes < counter)
+		while (hashes < rows)
 		{
 			_putchar('#');
 			hashes++;
 		}
 	_putchar('\n');
-	counter++;
+	rows++;
 	}
 	}
 	else
