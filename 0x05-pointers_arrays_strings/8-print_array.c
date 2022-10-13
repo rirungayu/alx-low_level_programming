@@ -22,5 +22,5 @@ else
 printf("%d, ", a[i]);
 i++;
 }
-_putchar('\n');
+printf('\n');
 }
