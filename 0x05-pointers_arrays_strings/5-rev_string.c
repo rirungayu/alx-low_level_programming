@@ -2,7 +2,7 @@
 
 /**
 * rev_string - reverses a astring
-* @: the string
+* @s: the string
 * Return: nothing
 */
 
@@ -11,7 +11,7 @@ void rev_string(char *s)
 int i = 0;
 int j;
 int slen;
-char copy [600];
+char copy[600];
 
 while (s[i] != '\0')
 {
