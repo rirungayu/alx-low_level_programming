@@ -5,7 +5,7 @@ void rev_string(char *s)
 int i = 0;
 int j;
 int slen;
-char copy [slen];
+char copy [200];
 
 while (s[i] != '\0')
 {
