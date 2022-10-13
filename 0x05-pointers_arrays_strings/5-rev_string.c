@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+* rev_string - reverses a astring
+* @: the string
+* Return: nothing
+*/
+
 void rev_string(char *s)
 {
 int i = 0;
