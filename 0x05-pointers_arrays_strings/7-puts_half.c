@@ -18,7 +18,7 @@ i++;
 
 start = i / 2;
 
-if(i % 2 != 0)
+if (i % 2 != 0)
 start += 1;
 
 while (start < i)
