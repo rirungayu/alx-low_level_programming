@@ -34,4 +34,7 @@ char *_strcpy(char *dest, char *src);
 /* converts a string to an integer */
 int _atoi(char *s);
 
+/* prints a astring */
+void _putchar(char c);
+
 #endif
