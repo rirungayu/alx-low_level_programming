@@ -3,18 +3,18 @@
 /**
 * print_rev - prints a string in reverse
 * @s: the string
-8 Return: nothing
+* Return: nothing
 */
 
 void print_rev(char *s)
 {
 int i = 0;
-  
+
 while (s[i] != '\0')
 {
 i++;
 }
-  
+
 while (i >= 0)
 {
 if (s[i] != '\0')
