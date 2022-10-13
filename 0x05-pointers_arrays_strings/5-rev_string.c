@@ -5,14 +5,14 @@ void rev_string(char *s)
 int i = 0;
 int j;
 int slen;
-  
+char copy [slen];
+
 while (s[i] != '\0')
 {
 i++;
 }
 
 slen = i;
-char copy [slen];
 
 for (j = 0; j < slen; j++){
 copy[j] = s[i - 1];
