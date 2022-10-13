@@ -20,14 +20,16 @@ i++;
 
 slen = i;
 
-for (j = 0; j < slen; j++){
+for (j = 0; j < slen; j++)
+{
 copy[j] = s[i - 1];
 i--;
 }
 
 copy[slen] = '\0';
 
-for (j = 0; j < slen; j++){
+for (j = 0; j < slen; j++)
+{
 s[j] = copy[j];
 }
 }
