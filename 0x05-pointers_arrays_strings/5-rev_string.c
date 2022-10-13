@@ -4,13 +4,14 @@ void rev_string(char *s)
 {
 int i = 0;
 int j;
-
+int slen;
+  
 while (s[i] != '\0')
 {
 i++;
 }
 
-int slen = i;
+slen = i;
 char copy [slen];
 
 for (j = 0; j < slen; j++){
