@@ -13,10 +13,13 @@ int start;
 
 while (str[i] != '\0')
 {
-i++;    
+i++;
 }
 
 start = i / 2;
+
+if(i % 2 != 0)
+start += 1;
 
 while (start < i)
 {
@@ -24,5 +27,5 @@ _putchar(str[start]);
 start++;
 }
 
-_putchar('\n');  
+_putchar('\n');
 }
