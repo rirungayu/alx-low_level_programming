@@ -20,9 +20,9 @@ start = i / 2;
 
 while (start < i)
 {
-putchar(str[start]);
+_putchar(str[start]);
 start++;
 }
 
-putchar('\n');  
+_putchar('\n');  
 }
