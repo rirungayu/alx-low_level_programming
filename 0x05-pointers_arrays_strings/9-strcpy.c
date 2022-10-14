@@ -12,11 +12,13 @@ char *_strcpy(char *dest, char *src)
 int i = 0;
 int len = 0;
 
-if(src[0] == '\0'){
+if (src[0] == '\0')
+{
 dest[0] = '\0'; 
 return dest;
 }
-while(src[len] != '\0'){
+while (src[len] != '\0')
+{
 len++;
 }
 len += 1;
