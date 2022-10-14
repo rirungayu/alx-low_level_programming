@@ -3,12 +3,11 @@
 #include "main.h"
 
 /**
-* create_array - creates an array
-* @size: size of the array
-* @c: initlial value
-* Return: pointer to the array
-*/
-
+ * create_array - creates an array
+ * @size: size of the array
+ * @c:initial values
+ * Return: pointer to array
+ */
 char *create_array(unsigned int size, char c)
 {
 	char *chars;
