@@ -14,8 +14,8 @@ int len = 0;
 
 if (src[0] == '\0')
 {
-dest[0] = '\0'; 
-return dest;
+dest[0] = '\0';
+return (dest);
 }
 while (src[len] != '\0')
 {
