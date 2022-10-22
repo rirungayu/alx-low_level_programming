@@ -8,7 +8,7 @@
 * Return: nothing
 */
 
-void print_chessboard(char (*a)[8])
+void print_chessboard(char a[8][8])
 {
 	unsigned int i, j;
 
