@@ -6,4 +6,10 @@
 * Return: void
 */
 
+void *malloc_checked(unsigned int b)
+{
+int *p malloc(b);
+return p;
+}
+
 
