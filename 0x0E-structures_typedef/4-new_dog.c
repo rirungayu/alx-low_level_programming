@@ -10,7 +10,7 @@
 */
 
 
-void *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 int i = 0;
 
@@ -20,7 +20,7 @@ while (src[i] != '\0')
 i++;
 }
 *(dest + i) = '\0';
-// return (dest);
+return (dest);
 }
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -45,8 +45,8 @@ owner++;
 
 namecp = malloc(sizeof(char) * namelen);
 ownercp = malloc(sizeof(char) * ownerlen);
-_strcpy(namecp, name);
-_strcpy(ownercp, owner);
+namecp = _strcpy(namecp, name);
+ownercp = _strcpy(ownercp, owner);
 
 return (new_dog);
 }
