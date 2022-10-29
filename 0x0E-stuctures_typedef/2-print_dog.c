@@ -8,5 +8,5 @@
 
 void print_dog(struct dog *d)
 {
-printf("Name: %s\n Age: %.1f\n Owner: %s", d.name, d.age, d.owner);
+printf("Name: %s\n Age: %f\n Owner: %s\n", d -> name, d -> age, d -> owner);
 }
