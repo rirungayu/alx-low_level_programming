@@ -1,1 +1,1 @@
-structures folder
+this folder is about struct in c
