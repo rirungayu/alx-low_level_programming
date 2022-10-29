@@ -1,23 +1,21 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
 * string_nconcat - concatentates two strings
-
 * @s1: first string
 * @s2: second string
 * @n: bytes of s2 to be added
-
 * Return: new concatenated string
 * NULL if it fails
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int s1len = 0;
-int s2len = 0;
-int i = 0;
-int j = 0;
+unsigned int s1len = 0;
+unsigned int s2len = 0;
+unsigned int i = 0;
+unsigned int j = 0;
 char *ar;
 
 if (s1 == NULL)
