@@ -23,23 +23,25 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-while (s1[s1len] != NULL)
+while (s1[s1len])
 s1len++;
 
-while (s2[s2len] != NULL)
+while (s2[s2len])
 s2len++;
   
 if (n < s2len)
 s2len = n;
 
-ar = malloc(sizeof(char) * (s1len + s2len));
+ar = malloc(sizeof(char) * (s1len + s2len + 1));
+
+if (ar == NULL)
+return (NULL);
 
 while (i < s1len)
 {
 ar[i] == s1[i];
 i++;
 }
-
 
 while (j < s2len)
 {
