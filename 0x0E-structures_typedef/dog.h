@@ -1,13 +1,11 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
-
-
 /**
-* struct dog - dog type
-* @name: Name of the dog
-* @age: Age of the dog
-* @owner: Owner of the dog
+* struct dog - new dog struct
+* @name: name of dog
+* @ag2: age of dog
+* @owner: owner of dog
 */
 
 struct dog
