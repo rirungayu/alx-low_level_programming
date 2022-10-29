@@ -14,8 +14,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int s1len = 0;
 unsigned int s2len = 0;
-unsigned int i = 0;
-unsigned int j = 0;
+unsigned int i;
+unsigned int j;
 char *ar;
 
 if (s1 == NULL)
@@ -37,17 +37,13 @@ ar = malloc(sizeof(char) * (s1len + s2len + 1));
 if (ar == NULL)
 return (NULL);
 
-while (i < s1len)
-{
-ar[i] == s1[i];
-i++;
-}
+for (i = 0; i < s1len; i++)
+ar[i] == s1[i]
 
-while (j < s2len)
+for (j = 0; j < s2len; j++)
 {
 ar[i] = s2[j];
 i++;
-j++;
 }
 
 ar[i] = '\0';
