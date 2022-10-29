@@ -9,6 +9,20 @@
 * Return: void
 */
 
+
+void *_strcpy(char *dest, char *src)
+{
+int i = 0;
+
+while (src[i] != '\0')
+{
+*(dest + i) = src[i];
+i++;
+}
+*(dest + i) = '\0';
+// return (dest);
+}
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *new_dog;
@@ -35,19 +49,4 @@ _strcpy(namecp, name);
 _strcpy(ownercp, owner);
 
 return (new_dog);
-}
-
-char *_strcpy(char *dest, char *src)
-{
-	int i = 0;
-
-	while (src[i] != '\0')
-	{
-		*(dest + i) = src[i];
-		i++;
-	}
-
-	*(dest + i) = '\0';
-
-	return (dest);
 }
