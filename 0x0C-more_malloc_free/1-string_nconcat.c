@@ -17,15 +17,40 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 int s1len = 0;
 int s2len = 0;
 int i = 0;
+int j = 0;
 char *ar;
-
-ar = malloc(sizeof(char) * (s1len + s2len));
 
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-while (
+while (s1[s1len] != NULL)
+s1len++;
+
+while (s2[s2len] != NULL)
+s2len++;
+  
+if (n < s2len)
+s2len = n;
+
+ar = malloc(sizeof(char) * (s1len + s2len));
+
+while (i < s1len)
+{
+ar[i] == s1[i];
+i++;
+}
+
+
+while (j < s2len)
+{
+ar[i] = s2[j];
+i++;
+j++;
+}
+
+ar[i] = '\0';
+
 return (ar);
 }
