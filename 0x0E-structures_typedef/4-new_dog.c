@@ -29,8 +29,8 @@ namelen++;
 while (owner)
 owner++;
 
-name_cp = malloc(sizeof(char) * namelen);
-owner_cp = malloc(sizeof(char) * ownerlen);
+namecp = malloc(sizeof(char) * namelen);
+ownercp = malloc(sizeof(char) * ownerlen);
 _strcpy(namecp, name);
 _strcpy(ownercp, owner);
 
