@@ -20,4 +20,6 @@ new_dog->owner = owner;
 
 if (new_dog == NULL)
 return (NULL);
+  
+return (new_dog);
 }
