@@ -7,7 +7,7 @@
 * @argv: array of arguments
 */
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int num1;
 int num2;
