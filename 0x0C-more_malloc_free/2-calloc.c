@@ -25,5 +25,5 @@ return NULL;
 while (i < nmemb * size)
 arr[i] = 0;
 
-return ((void *)ptr);
+return ((void *)arr);
 }
