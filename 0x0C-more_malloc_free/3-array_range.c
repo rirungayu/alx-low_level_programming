@@ -19,7 +19,7 @@ arr = malloc(sizeof(int) * (max - min +1));
 if (arr == NULL)
 return NULL;
 
-while (min != max)
+while (min <= max)
 {
 arr[i] = min;
 min++;
