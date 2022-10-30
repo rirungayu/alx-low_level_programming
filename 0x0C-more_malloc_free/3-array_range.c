@@ -4,6 +4,7 @@
 * array_range - fills array from range
 * @min: start value
 * @max: end value
+* Return: pointer to new array
 */
 
 int *array_range(int min, int max)
