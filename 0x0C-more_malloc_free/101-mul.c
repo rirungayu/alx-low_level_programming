@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 unsigned long num1;
 unsigned long num2;
 unsigned long result;
-int i = 0;
+int i = 1;
 int j = 0;
 
 if (argc != 3)
@@ -36,7 +36,7 @@ if (argv[i][j] > 57 || argv[i][j] < 48)
 printf("Error\n");
 exit(98);
 }
-j++
+j++;
 }
 i++;
 }
