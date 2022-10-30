@@ -38,7 +38,7 @@ if (ar == NULL)
 return (NULL);
 
 for (i = 0; i < s1len; i++)
-ar[i] == s1[i]
+ar[i] = s1[i]
 
 for (j = 0; j < s2len; j++)
 {
