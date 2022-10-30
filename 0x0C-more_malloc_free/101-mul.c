@@ -29,10 +29,14 @@ num2 = atol(argv[2]);
 
 while (i < argc)
 {
-if (argv[i] > 57 || argv[i] < 48)
+while (argv[i][j] != '\0')
+{
+if (argv[i][j] > 57 || argv[i][j] < 48)
 {
 printf("Error\n");
 exit(98);
+}
+j++
 }
 i++;
 }
