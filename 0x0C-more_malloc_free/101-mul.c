@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
 * main - multiplies two numvers
@@ -20,9 +21,13 @@ printf("Error\n");
 exit(98);
 }
 
+  
+num1 = atoi(argv[1]);
+num2 = atoi(argv[2]);
+
 while (i < argc)
 {
-if (argv[i] > 57 || argv[i] < 48)
+if (num1 > 57 || num2 < 48)
 {
 printf("Error");
 exit(98);
@@ -30,8 +35,6 @@ exit(98);
 i++;
 }
 
-num1 = atoi(argv[1]);
-num2 = atoi(argv[2]);
 printf("%l\n", (num1 * num2));
 
 return (result);
