@@ -30,7 +30,7 @@ while (i < argc)
 {
 if (num1 > 57 || num2 < 48)
 {
-printf("Error");
+printf("Error\n");
 exit(98);
 }
 i++;
