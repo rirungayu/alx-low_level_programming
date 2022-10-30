@@ -6,6 +6,7 @@
 * main - multiplies two numvers
 * @argc: no of arguments
 * @argv: array of arguments
+* Return: zero
 */
 
 int main(int argc, char *argv[])
@@ -13,7 +14,7 @@ int main(int argc, char *argv[])
 int num1;
 int num2;
 unsigned long result;
-int i;
+int i = 0;
 
 if (argc != 3)
 {
