@@ -4,8 +4,8 @@
 
 /**
 * _calloc - allocates memory for an array
-* nmemb: no of elements
-* size: no of bytes each
+* @nmemb: no of elements
+* @size: no of bytes each
 * Return: a pointer to the allocated memory.
 */
 
