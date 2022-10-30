@@ -39,5 +39,5 @@ i++;
   
 printf("%lu\n", result);
 
-return (result);
+return (0);
 }
