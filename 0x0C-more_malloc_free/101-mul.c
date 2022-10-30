@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
 unsigned long num1;
 unsigned long num2;
 unsigned long result;
-int i =;
-int j =;
+int i;
+int j;
 
 if (argc != 3)
 {
