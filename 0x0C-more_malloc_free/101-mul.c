@@ -15,6 +15,7 @@ unsigned long num1;
 unsigned long num2;
 unsigned long result;
 int i = 0;
+int j = 0;
 
 if (argc != 3)
 {
@@ -28,7 +29,7 @@ num2 = atol(argv[2]);
 
 while (i < argc)
 {
-if (num1 > 57 || num2 < 48)
+if (argv[i] > 57 || argv[i] < 48)
 {
 printf("Error\n");
 exit(98);
@@ -36,7 +37,7 @@ exit(98);
 i++;
 }
 
-  result = num1 * num2;
+result = num1 * num2;
   
 printf("%lu\n", result);
 
