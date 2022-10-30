@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 int num1;
 int num2;
-long result;
+unsigned long result;
 int i;
 
 if (argc != 3)
@@ -37,7 +37,7 @@ i++;
 
   result = num1 * num2;
   
-printf("%l\n", result);
+printf("%lu\n", result);
 
 return (result);
 }
