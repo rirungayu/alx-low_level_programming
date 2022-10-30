@@ -35,7 +35,9 @@ exit(98);
 i++;
 }
 
-printf("%l\n", (num1 * num2));
+  result = num1 * num2;
+  
+printf("%l\n", result);
 
 return (result);
 }
