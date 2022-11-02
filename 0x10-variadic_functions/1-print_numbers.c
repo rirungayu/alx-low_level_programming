@@ -12,10 +12,10 @@ unsigned int i = 0;
 va_list ap;
 
 if (n != 0)
-{ 
+{
 va_start(ap, n);
 
-while (i < n)
+while (i < n - 1)
 {
 if (separator != NULL)
 printf("%d%s", va_arg(ap, int), separator);
@@ -25,7 +25,9 @@ i++;
 }
 printf("\n");
 
-va_end(ap);   
+va_end(ap);
 }
 
+else
+printf("\n");
 }
