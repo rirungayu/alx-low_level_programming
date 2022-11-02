@@ -20,10 +20,8 @@ str = va_arg(ap, char *);
 if (separator != NULL)
 printf("%s%s", str ? str : "(nil)", separator);
 else
-{
-printf("%s", str ? str: "(nil)");
+printf("%s", str ? str : "(nil)");
 i++;
-}
 }
 
 va_end(ap);
