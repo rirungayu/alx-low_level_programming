@@ -3,6 +3,7 @@
 /**
 * sum_them_all - adds all arguments
 * @n: number of arguments
+* Return: zero or sum
 */
 
 int sum_them_all(const unsigned int n, ...)
@@ -11,7 +12,7 @@ int sum = 0;
 va_list args;
 unsigned int i = 0;
 
-if ( n!= 0)
+if (n != 0)
 {
 va_start(args, n);
 while (i < n)
