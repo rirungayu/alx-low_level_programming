@@ -2,8 +2,8 @@
 
 /**
 * print_numbers - prints numbers
-* separator: separates arguments
-* n: number of integers
+* @separator: separates arguments
+* @n: number of integers
 */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -13,7 +13,7 @@ va_list ap;
 
 if (n == 0)
 exit(98);
-  
+ 
 va_start(ap, n);
 
 while (i < n)
@@ -25,6 +25,6 @@ printf("%d", va_arg(ap, int));
 }
 printf("\n");
 
-va_end(ap);       
+va_end(ap);   
 
 }
