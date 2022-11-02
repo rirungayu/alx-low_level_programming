@@ -21,7 +21,6 @@ else
 printf("%d", va_arg(ap, int));
 i++;
 }
-printf("\n");
 
 va_end(ap);
 
