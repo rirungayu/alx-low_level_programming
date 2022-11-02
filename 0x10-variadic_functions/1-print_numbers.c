@@ -25,7 +25,7 @@ i++;
 va_end(ap);
 
 if (n)
-printf("%d", va_arg(ap, int));
+printf("%d\n", va_arg(ap, int));
 else
 printf("\n");
 }
