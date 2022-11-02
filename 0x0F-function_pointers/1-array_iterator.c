@@ -15,5 +15,6 @@ if (action != NULL && array != NULL)
 {
 while (i < size)
 action(array[i]);
+i++:
 }
 }
