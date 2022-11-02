@@ -16,9 +16,9 @@ va_start(ap, n);
 while (i < n - 1 && n != 0)
 {
 if (separator != NULL)
-printf("%s%s", va_arg(ap, char *) != NULL ? va_arg(ap, char *) : "(nil)", separator);
+printf("%s%s", va_arg(ap, char *) ? va_arg(ap, char *) : "(nil)", separator);
 else
-printf("%s", va_arg(ap, char *) != NULL ? va_arg(ap, char *) : "(nil)");
+printf("%s", va_arg(ap, char *) ? va_arg(ap, char *) : "(nil)");
 i++;
 }
 
