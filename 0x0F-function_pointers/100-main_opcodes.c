@@ -5,6 +5,7 @@
 * main - main function
 * @argc: number of args
 * @argv: arra of args
+* Return: zero
 */
 
 int main(int argc, char *argv[])
@@ -31,7 +32,7 @@ exit(2);
 
 while (i < bytes)
 {
-printf("%02x%c", (unsigned char)*((char *)prog + i), 
+printf("%02x%c", (unsigned char)*((char *)prog + i),
 i < bytes - 1 ? ' ' : '\n');
 i++;
 }
