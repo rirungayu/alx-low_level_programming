@@ -24,7 +24,7 @@ exit (2);
 
 while (i < bytes)
 {
-printf("%02x%c", (unsigned char)*((char *)prog + i), i < n_bytes - 1 ? ' ' : '\n');
+printf("%02x%c", (unsigned char)*((char *)prog + i), i < bytes - 1 ? ' ' : '\n');
 i++;
 }
 
