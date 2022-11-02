@@ -24,12 +24,12 @@ i++;
 }
 }
 
+va_end(ap);
+
 if (n)
 printf("%s\n", va_arg(ap, char *) ? va_arg(ap, char *) : "(nil)");
 else
 printf("\n");
- 
-va_end(ap);
 }
 
 
