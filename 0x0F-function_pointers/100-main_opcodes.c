@@ -8,12 +8,12 @@ int (*prog)(int, char **) = &main;
 
 if (argc != 2)
 {
-printf("Error"):
+printf("Error");
 exit (1);
 }
 
   
-bytes = atoi(argv[1])
+bytes = atoi(argv[1]);
 
 if (bytes < 0)
 {
