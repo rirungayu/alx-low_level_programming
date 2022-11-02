@@ -16,16 +16,16 @@ va_start(ap, n);
 while (i < n - 1 && n != 0)
 {
 if (separator != NULL)
-printf("%s%s", va_arg(ap, int), separator);
+printf("%s%s", va_arg(ap, char *), separator);
 else
-printf("%d", va_arg(ap, int));
+printf("%s", va_arg(ap, char *));
 i++;
 }
 
 va_end(ap);
 
 if (n)
-printf("%s\n", va_arg(ap, int));
+printf("%s\n", va_arg(ap, char *));
 else
 printf("\n");
 }
