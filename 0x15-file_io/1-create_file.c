@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
 * create_file - creates a file
@@ -16,7 +17,7 @@ char *buf;
 if (filename == NULL)
 return (-1);
 
-fd = opend(filename, O_CREAT | O_WRONLY | O_TRUCT, 0600);
+fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (fd == -1)
 return (-1);
 
