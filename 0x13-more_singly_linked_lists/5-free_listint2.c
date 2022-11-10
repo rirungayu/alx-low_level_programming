@@ -13,6 +13,6 @@ while (*head)
 {
 temp = *head;
 *head = temp->next;
-free(head);
+free(temp);
 }
 }
