@@ -1,9 +1,10 @@
-global main
-
 section .data
-message: db "Hello, Holberton",0
+message: db "Hello, Holberton",0x0a
+msglen equ $-msg
 
 section .text
+global main
+
 main:
 mov eax, 1 ; syscall for write
 mov edi, 1
