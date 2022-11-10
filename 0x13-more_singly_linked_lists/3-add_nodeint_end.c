@@ -23,6 +23,7 @@ current_node = current_node->next;
 }
 current_node->next = new_node;
 new_node->n = n;
+new_node->next = NULL;
 }
 
 return (current_node->next);
