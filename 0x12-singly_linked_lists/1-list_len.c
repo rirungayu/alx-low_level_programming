@@ -13,7 +13,7 @@ size_t length = 0;
 while (h)
 {
 length++;
-h = h-> next;
+h = h->next;
 }
-return(length);
+return (length);
 }
