@@ -18,6 +18,7 @@ n = node->n;
 *head = node->next;
 free(node);
 }
-
 return (n);
+else
+return (0);
 }
