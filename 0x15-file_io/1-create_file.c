@@ -23,7 +23,7 @@ return (-1);
 real_letters = write(fd, text_content, strlen(text_content));
 if (real_letters == -1)
 {
-close(file);
+close(fd);
 return (-1);
 }
 
