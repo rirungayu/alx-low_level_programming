@@ -13,23 +13,35 @@ int fd;
 char buf;
 ssize_t real_letters;
 
-buf = malloc(sizeof(char) * letters + 1);
-
 if (filename == NULL) 
 return (0);
 
-fd = open(filename, O_RDONLY);
-
-if (fd == -1) 
+buf = malloc(sizeof(char) * letters + 1);
+if (buf == NULL)
 return (0);
+
+fd = open(filename, O_RDONLY);
+if (fd == -1) 
+{
+free(buf);
+return (0);
+}
 
 real_letters = read(fd, buf, sizeof(char) * letters);
 if (real_letters == -1)
+{
+free(buf);
+close(fd);
 return (0);
+}
 
 real_letters = write(STDOUT_FILENO, buf, real_letters);
 if (real_letters == -1)
+{
+free(buf);
+close(fd);
 return (0);
+}
 
 close(fd);
 
