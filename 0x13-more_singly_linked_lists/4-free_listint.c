@@ -12,7 +12,8 @@ listint_t *temp;
 
 while (head)
 {
-temp = head;
 head = head->next;
-free(temp);
+free(head);
+temp = head;
+
 }
