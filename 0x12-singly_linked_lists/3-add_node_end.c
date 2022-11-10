@@ -18,7 +18,7 @@ else
 {
 while (current_node)
 {
-if(current_node->next)
+if (current_node->next)
 current_node = current_node->next;
 }
 new_node->str = strdup(str);
