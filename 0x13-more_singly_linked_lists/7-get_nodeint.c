@@ -16,7 +16,7 @@ if(i < index)
 {
 while (i < index)
 {
-node = node->next
+node = node->next;
 i++;
 }
 return (node);
