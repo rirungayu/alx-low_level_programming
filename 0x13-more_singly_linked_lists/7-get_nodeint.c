@@ -13,7 +13,7 @@ listint_t *node = head;
 unsigned int i = 0;
 
 
-while (temp && (i < index))
+while ((i < index))
 {
 node = node->next;
 i++;
