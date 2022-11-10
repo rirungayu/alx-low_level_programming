@@ -12,8 +12,8 @@ listint_t *temp;
 
 while (head)
 {
-if (head->str)
-free(head->str);
+if (head->n)
+free(head->n);
 
 temp = head;
 head = head->next;
