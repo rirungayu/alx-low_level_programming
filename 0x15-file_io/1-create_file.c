@@ -4,7 +4,7 @@
 /**
 * create_file - creates a file
 * @filename: name of file to read
-* @text_context: content
+* @text_content: content
 * Return: 1 or -1
 */
 
