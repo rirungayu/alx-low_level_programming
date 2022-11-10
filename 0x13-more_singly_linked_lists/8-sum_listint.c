@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* sum_intlist - sum of all the data
+* sum_listint - sum of all the data
 * @head: head of the list
 * Return: return sum or zero
 */
