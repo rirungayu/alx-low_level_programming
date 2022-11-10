@@ -8,7 +8,7 @@ global main
 main:
 mov eax, 1 ; syscall for write
 mov edi, 1
-mov rsi, msg
+mov rsi, message
 mov edx, msglen
 syscall
 mov eax, 60 ; 60 is exit
